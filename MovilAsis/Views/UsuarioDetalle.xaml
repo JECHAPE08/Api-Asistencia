@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:MovilAsis.Models"
+             x:Class="MovilAsis.Views.UsuarioDetalle"
+             x:DataType="model:AsistenciaDelDiaDTO"
+             Title="Detalle del Usuario"
+             BackgroundColor="White">
+
+    <ContentPage.BindingContext>
+        <model:AsistenciaDelDiaDTO />
+    </ContentPage.BindingContext>
+
+    <Grid RowDefinitions="70,*,Auto" Padding="0">
+
+        <!-- Encabezado azul oscuro -->
+        <Grid BackgroundColor="#3949AB"
+              Padding="20,0"
+              ColumnDefinitions="*,Auto"
+              HeightRequest="70">
+
+            <Label Text="Detalle del Usuario"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Start" />
+
+            <Button Text="Regresar"
+                    BackgroundColor="#5C6BC0"
+                    TextColor="White"
+                    FontSize="14"
+                    FontAttributes="Bold"
+                    CornerRadius="20"
+                    Padding="16,6"
+                    VerticalOptions="Center"
+                    HorizontalOptions="End"
+                    HeightRequest="40"
+                    WidthRequest="130"
+                    Clicked="OnInicio"/>
+        </Grid>
+
+        <ScrollView Grid.Row="1" Margin="16,10">
+            <Frame CornerRadius="20"
+                   Padding="24"
+                   BackgroundColor="White"
+                   BorderColor="#5C6BC0"
+                   HasShadow="True"
+                   Margin="0">
+
+                <VerticalStackLayout Spacing="28">
+
+                    <Label Text="{Binding Nombre}"
+                           FontSize="28"
+                           FontAttributes="Bold"
+                           TextColor="#3949AB"
+                           HorizontalOptions="Center" />
+
+                    <VerticalStackLayout Spacing="22">
+
+                        <VerticalStackLayout>
+                            <Label Text="Matrícula"
+                                   FontSize="15"
+                                   FontAttributes="Bold"
+                                   TextColor="#5C6BC0"/>
+                            <Label Text="{Binding Matricula}"
+                                   FontSize="18"
+                                   TextColor="Black" />
+                        </VerticalStackLayout>
+                        <BoxView HeightRequest="1" BackgroundColor="#5C6BC0" Margin="0,6"/>
+
+                        <VerticalStackLayout>
+                            <Label Text="Grupo"
+                                   FontSize="15"
+                                   FontAttributes="Bold"
+                                   TextColor="#5C6BC0"/>
+                            <Label Text="{Binding Grupo}"
+                                   FontSize="18"
+                                   TextColor="Black" />
+                        </VerticalStackLayout>
+                        <BoxView HeightRequest="1" BackgroundColor="#5C6BC0" Margin="0,6"/>
+
+                        <VerticalStackLayout>
+                            <Label Text="Hora de Entrada"
+                                   FontSize="15"
+                                   FontAttributes="Bold"
+                                   TextColor="#5C6BC0"/>
+                            <Label Text="{Binding FechaEntradaDateTime, StringFormat='{0:dd MMMM yyyy, hh:mm tt}'}"
+                                   FontSize="18"
+                                   TextColor="Black" />
+                        </VerticalStackLayout>
+                        <BoxView HeightRequest="1" BackgroundColor="#5C6BC0" Margin="0,6"/>
+
+                        <VerticalStackLayout>
+                            <Label Text="Latitud"
+                                   FontSize="15"
+                                   FontAttributes="Bold"
+                                   TextColor="#5C6BC0"/>
+                            <Label Text="{Binding LatitudEntrada, StringFormat='{0:F6}'}"
+                                   FontSize="18"
+                                   TextColor="Black" />
+                        </VerticalStackLayout>
+                        <BoxView HeightRequest="1" BackgroundColor="#5C6BC0" Margin="0,6"/>
+
+                        <VerticalStackLayout>
+                            <Label Text="Longitud"
+                                   FontSize="15"
+                                   FontAttributes="Bold"
+                                   TextColor="#5C6BC0"/>
+                            <Label Text="{Binding LongitudEntrada, StringFormat='{0:F6}'}"
+                                   FontSize="18"
+                                   TextColor="Black" />
+                        </VerticalStackLayout>
+                    </VerticalStackLayout>
+                </VerticalStackLayout>
+            </Frame>
+        </ScrollView>
+
+        <Button Grid.Row="2"
+                Text="VER EN MAPA"
+                Clicked="OnAbrirMapaClicked"
+                CornerRadius="24"
+                HeightRequest="50"
+                FontAttributes="Bold"
+                TextColor="White"
+                BackgroundColor="#3949AB"
+                FontSize="16"
+                Margin="16,0,16,16"
+                VerticalOptions="End"
+                Padding="20,0" />
+    </Grid>
+</ContentPage>

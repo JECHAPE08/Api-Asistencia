@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MovilAsis.Views.InicioControl"
+             x:DataType="model:AsistenciaDelDiaDTO"
+             xmlns:model="clr-namespace:MovilAsis.Models"
+             xmlns:converters="clr-namespace:MovilAsis"
+             BackgroundColor="White">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:BoolToColorConverter x:Key="BoolToColorConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.BindingContext>
+        <model:AsistenciaDelDiaDTO/>
+    </ContentPage.BindingContext>
+
+    <Grid Padding="0" RowDefinitions="Auto,*,Auto">
+
+        <!-- Encabezado azul oscuro -->
+        <Grid BackgroundColor="#3949AB"  
+              Padding="16,0"
+              HeightRequest="60"
+              ColumnDefinitions="*,Auto"
+              VerticalOptions="Start">
+
+            <Label Text="Control de Asistencia"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Start" />
+
+            <!-- Botón menú estilo "chip" -->
+            <Button Text="⋮"
+                    FontSize="26"
+                    TextColor="White"
+                    BackgroundColor="#5C6BC0" 
+                    CornerRadius="20"
+                    Padding="0"
+                    WidthRequest="44"
+                    HeightRequest="44"
+                    VerticalOptions="Center"
+                    HorizontalOptions="End"
+                    Clicked="OnAbrirMenu" />
+        </Grid>
+
+        <CollectionView Grid.Row="1"
+                        x:Name="usuariosCollectionView"
+                        SelectionMode="Single"
+                        SelectionChanged="OnUsuarioSeleccionado"
+                        Margin="20,16"
+                        BackgroundColor="Transparent">
+
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical" ItemSpacing="18" />
+            </CollectionView.ItemsLayout>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <!-- Sombra muy sutil -->
+                        <BoxView BackgroundColor="#22000000"
+                                 Margin="6,6,0,0"
+                                 CornerRadius="10"
+                                 HorizontalOptions="Fill"
+                                 VerticalOptions="Fill" />
+
+                        <!-- Borde (azul si es válido, rojo si no) -->
+                        <BoxView BackgroundColor="{Binding UbicacionValida, Converter={StaticResource BoolToColorConverter}, ConverterParameter='#3949AB|#FF0000'}"
+                                 Margin="0"
+                                 HorizontalOptions="Fill"
+                                 VerticalOptions="Fill" />
+
+                        <Grid BackgroundColor="{Binding UbicacionValida, Converter={StaticResource BoolToColorConverter}, ConverterParameter='White|#FFEEEE'}"
+                              Padding="20"
+                              Margin="1"
+                              HorizontalOptions="FillAndExpand"
+                              VerticalOptions="Center">
+
+                            <VerticalStackLayout Spacing="10">
+
+                                <Label Text="{Binding Nombre}"
+                                       FontSize="20"
+                                       FontAttributes="Bold"
+                                       TextColor="{Binding UbicacionValida, Converter={StaticResource BoolToColorConverter}, ConverterParameter='#3949AB|#FF0000'}"
+                                       HorizontalOptions="Center" />
+
+                                <BoxView HeightRequest="1"
+                                         Color="{Binding UbicacionValida, Converter={StaticResource BoolToColorConverter}, ConverterParameter='#3949AB|#FF0000'}"
+                                         HorizontalOptions="Fill" />
+
+                                <Grid ColumnDefinitions="Auto, *"
+                                      RowDefinitions="Auto, Auto"
+                                      ColumnSpacing="10"
+                                      RowSpacing="6">
+
+                                    <Label Text="Matrícula:"
+                                           FontSize="15"
+                                           FontAttributes="Bold"
+                                           TextColor="#5C6BC0"  
+                                           Grid.Row="0" Grid.Column="0"
+                                           VerticalOptions="Center" />
+                                    <Label Text="{Binding Matricula}"
+                                           FontSize="15"
+                                           TextColor="Black"
+                                           Grid.Row="0" Grid.Column="1"
+                                           VerticalOptions="Center" />
+
+                                    <Label Text="Hora:"
+                                           FontSize="15"
+                                           FontAttributes="Bold"
+                                           TextColor="#5C6BC0"
+                                           Grid.Row="1" Grid.Column="0"
+                                           VerticalOptions="Center" />
+                                    <Label Text="{Binding FechaEntradaDateTime}"
+                                           FontSize="15"
+                                           TextColor="Black"
+                                           Grid.Row="1" Grid.Column="1"
+                                           VerticalOptions="Center" />
+                                </Grid>
+                            </VerticalStackLayout>
+                        </Grid>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+            <CollectionView.EmptyView>
+                <StackLayout VerticalOptions="Center"
+                             HorizontalOptions="Center"
+                             Padding="20">
+                    <Label Text="No se encontraron usuarios"
+                           FontSize="18"
+                           TextColor="#3949AB"
+                           HorizontalOptions="Center" />
+                </StackLayout>
+            </CollectionView.EmptyView>
+        </CollectionView>
+    </Grid>
+</ContentPage>

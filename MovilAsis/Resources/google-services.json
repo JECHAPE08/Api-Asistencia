@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "210238975764",
+    "project_id": "asistencia-662df",
+    "storage_bucket": "asistencia-662df.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:210238975764:android:c2b3d0d07b832b29765c01",
+        "android_client_info": {
+          "package_name": "com.company.MovilAsis"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1HnJkSSxsrXaRxdscG46e3p7BjZ2JoPE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

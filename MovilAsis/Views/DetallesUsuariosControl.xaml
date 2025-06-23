@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MovilAsis.Views.DetallesUsuariosControl"
+             xmlns:model="clr-namespace:MovilAsis.Models"
+             Title="Detalle de Usuario"
+             BackgroundColor="White">
+
+    <ContentPage.BindingContext>
+        <model:Usuario />
+    </ContentPage.BindingContext>
+
+    <Grid Padding="0" RowDefinitions="Auto,Auto,*,Auto,Auto" ColumnDefinitions="*">
+
+        <!-- Encabezado azul -->
+        <Grid BackgroundColor="#3949AB"
+              Padding="20,0"
+              HeightRequest="60"
+              ColumnDefinitions="*,Auto"
+              VerticalOptions="Start"
+              HorizontalOptions="FillAndExpand">
+
+            <!-- Título a la izquierda -->
+            <Label Text="Detalle de Usuario"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Start" />
+
+            <!-- Botón Regresar a la derecha -->
+            <Grid Grid.Column="1"
+                  Padding="0"
+                  VerticalOptions="Center"
+                  HorizontalOptions="End"
+                  HeightRequest="42"
+                  WidthRequest="130"
+                  Margin="0,0,10,0">
+                <Button Text="Regresar"
+                        BackgroundColor="#5C6BC0"
+                        TextColor="White"
+                        FontSize="14"
+                        FontAttributes="Bold"
+                        CornerRadius="20"
+                        Padding="16,6"
+                        Clicked="OnRegresar" />
+            </Grid>
+        </Grid>
+
+        <!-- Datos del usuario -->
+        <Frame Grid.Row="1"
+               Margin="15,10"
+               Padding="15"
+               BackgroundColor="White"
+               BorderColor="#3949AB"
+               HasShadow="True"
+               CornerRadius="12">
+
+            <Grid RowDefinitions="Auto,Auto,Auto,Auto"
+                  ColumnDefinitions="Auto,*"
+                  RowSpacing="12">
+
+                <Label Text="Nombre:"
+                       FontSize="16"
+                       FontAttributes="Bold"
+                       TextColor="#3949AB"
+                       VerticalOptions="Center" />
+                <Label Text="{Binding Nombre}"
+                       FontSize="16"
+                       TextColor="Black"
+                       VerticalOptions="Center"
+                       Grid.Column="1" />
+
+                <Label Text="Matrícula:"
+                       FontSize="16"
+                       FontAttributes="Bold"
+                       TextColor="#3949AB"
+                       VerticalOptions="Center"
+                       Grid.Row="1" />
+                <Label Text="{Binding Matricula}"
+                       FontSize="16"
+                       TextColor="Black"
+                       VerticalOptions="Center"
+                       Grid.Row="1"
+                       Grid.Column="1" />
+
+                <Label Text="Grupo:"
+                       FontSize="16"
+                       FontAttributes="Bold"
+                       TextColor="#3949AB"
+                       VerticalOptions="Center"
+                       Grid.Row="2" />
+                <Label Text="{Binding Grupo}"
+                       FontSize="16"
+                       TextColor="Black"
+                       VerticalOptions="Center"
+                       Grid.Row="2"
+                       Grid.Column="1" />
+
+                <Label Text="ID:"
+                       FontSize="16"
+                       FontAttributes="Bold"
+                       TextColor="#3949AB"
+                       VerticalOptions="Center"
+                       Grid.Row="3" />
+                <Label Text="{Binding Id}"
+                       FontSize="16"
+                       TextColor="Black"
+                       VerticalOptions="Center"
+                       Grid.Row="3"
+                       Grid.Column="1" />
+            </Grid>
+        </Frame>
+
+        <!-- Asistencias -->
+        <Frame Grid.Row="2"
+               Margin="15,0,15,10"
+               Padding="12"
+               BackgroundColor="White"
+               BorderColor="#3949AB"
+               HasShadow="True"
+               CornerRadius="12">
+
+            <VerticalStackLayout Spacing="12">
+                <Label Text="Asistencias del Mes"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="#3949AB"
+                       HorizontalOptions="Center" />
+
+                <CollectionView x:Name="asistenciasCollectionView"
+                                ItemsSource="{Binding AsistenciasMes}"
+                                SelectionMode="None"
+                                BackgroundColor="Transparent">
+
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Vertical" ItemSpacing="14" />
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid ColumnDefinitions="*,Auto"
+                                  Padding="10"
+                                  BackgroundColor="#F5F5F5"
+                                  Margin="6"
+                                  VerticalOptions="Center">
+
+                                <Label Text="{Binding FechaEntradaDateTime, StringFormat='{0:dd/MM/yyyy HH:mm}'}"
+                                       FontSize="14"
+                                       TextColor="Black"
+                                       VerticalOptions="Center" />
+
+                                <Button Text="📍"
+                                        FontSize="16"
+                                        BackgroundColor="#3949AB"
+                                        TextColor="White"
+                                        CornerRadius="10"
+                                        Clicked="OnMapa"
+                                        CommandParameter="{Binding}"
+                                        Grid.Column="1"
+                                        HeightRequest="32"
+                                        WidthRequest="40"
+                                        VerticalOptions="Center" />
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+        </Frame>
+
+        <!-- Botón eliminar centrado y redondeado -->
+        <Grid Grid.Row="3"
+              Margin="15,0,15,15"
+              HeightRequest="50"
+              VerticalOptions="Center"
+              HorizontalOptions="Center"
+              WidthRequest="180">
+
+            <Button Text="Eliminar"
+                    BackgroundColor="#3949AB"
+                    TextColor="White"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    CornerRadius="25"
+                    Padding="10,0"
+                    Clicked="OnEliminarUsuario" />
+        </Grid>
+
+        <BoxView Grid.Row="4" HeightRequest="10" BackgroundColor="Transparent" />
+
+    </Grid>
+</ContentPage>

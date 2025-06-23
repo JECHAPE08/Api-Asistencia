@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MovilAsis.Views.Registro"
+             xmlns:model="clr-namespace:MovilAsis.Models"
+             Title="Registro"
+             x:DataType="model:Usuario"
+             BackgroundColor="#191414">
+
+    <ContentPage.BindingContext>
+        <model:Usuario/>
+    </ContentPage.BindingContext>
+
+    <AbsoluteLayout>
+
+        <!-- Figuras decorativas -->
+        <Ellipse Fill="#1DB954" WidthRequest="250" HeightRequest="250"
+                 Opacity="0.12" AbsoluteLayout.LayoutBounds="0,0,250,250"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+        <Ellipse Fill="#FFFFFF" WidthRequest="200" HeightRequest="200"
+                 Opacity="0.05" AbsoluteLayout.LayoutBounds="1,0,200,200"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+        <Ellipse Fill="#1DB954" WidthRequest="150" HeightRequest="150"
+                 Opacity="0.08" AbsoluteLayout.LayoutBounds="0.9,1,150,150"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+        <!-- Contenido principal -->
+        <Grid RowDefinitions="*,Auto,*"
+              AbsoluteLayout.LayoutBounds="0,0,1,1"
+              AbsoluteLayout.LayoutFlags="All">
+
+            <!-- Contenedor blanco con sombra -->
+            <Frame Grid.Row="1"
+                   CornerRadius="20"
+                   Padding="30"
+                   BackgroundColor="White"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   WidthRequest="340"
+                   HasShadow="True">
+
+                <StackLayout Spacing="20">
+
+                    <Label Text="Registrarse"
+                           FontSize="26"
+                           FontAttributes="Bold"
+                           TextColor="#191414"
+                           HorizontalOptions="Center"/>
+
+                    <Entry Text="{Binding Nombre}"
+                           Placeholder="Nombre completo"
+                           TextColor="#191414"
+                           PlaceholderColor="#B0BEC5"
+                           FontSize="16"
+                           ClearButtonVisibility="WhileEditing"
+                           BackgroundColor="Transparent"/>
+
+                    <Entry Text="{Binding Matricula}"
+                           Placeholder="Matrícula"
+                           TextColor="#191414"
+                           PlaceholderColor="#B0BEC5"
+                           FontSize="16"
+                           Keyboard="Text"
+                           ClearButtonVisibility="WhileEditing"
+                           BackgroundColor="Transparent"/>
+
+                    <Entry Text="{Binding Contraseña}"
+                           Placeholder="Contraseña"
+                           IsPassword="True"
+                           TextColor="#191414"
+                           PlaceholderColor="#B0BEC5"
+                           FontSize="16"
+                           ClearButtonVisibility="WhileEditing"
+                           BackgroundColor="Transparent"/>
+
+                    <Entry Text="{Binding Grupo}"
+                           Placeholder="Grupo"
+                           TextColor="#191414"
+                           PlaceholderColor="#B0BEC5"
+                           FontSize="16"
+                           ClearButtonVisibility="WhileEditing"
+                           BackgroundColor="Transparent"/>
+
+                    <Button Text="Registrarse"
+                            Clicked="RegisterButton_Clicked"
+                            CornerRadius="24"
+                            HeightRequest="48"
+                            FontAttributes="Bold"
+                            TextColor="White"
+                            FontSize="16"
+                            HorizontalOptions="FillAndExpand"
+                            BackgroundColor="#1DB954"/>
+
+                    <Label Text="Iniciar sesión"
+                           TextColor="#1DB954"
+                           HorizontalOptions="Center"
+                           FontSize="14">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="LoginButton_Cliked"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+
+                </StackLayout>
+            </Frame>
+        </Grid>
+    </AbsoluteLayout>
+</ContentPage>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MovilAsis.Views.HistorialAsistencia"
+             Title="Historial de Asistencias"
+             BackgroundColor="White">
+
+    <Grid Padding="0" RowDefinitions="Auto,*,Auto" ColumnDefinitions="*">
+
+        <Grid BackgroundColor="#3949AB"
+              Padding="20,0"
+              HeightRequest="60"
+              ColumnDefinitions="*,Auto"
+              VerticalOptions="Start"
+              HorizontalOptions="FillAndExpand">
+
+            <Label Text="Asistencias"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Start" />
+
+            <Grid Grid.Column="1"
+                  VerticalOptions="Center"
+                  HorizontalOptions="End"
+                  HeightRequest="42"
+                  WidthRequest="130"
+                  Margin="0,0,10,0">
+                <Button Text="Regresar"
+                        BackgroundColor="#5C6BC0"
+                        TextColor="White"
+                        FontSize="14"
+                        FontAttributes="Bold"
+                        CornerRadius="20"
+                        Padding="16,6"
+                        Clicked="OnRegresar" />
+            </Grid>
+        </Grid>
+
+        <Frame Grid.Row="1"
+               Margin="15,10"
+               Padding="12"
+               BackgroundColor="White"
+               BorderColor="#3949AB"
+               HasShadow="True"
+               CornerRadius="12">
+
+            <VerticalStackLayout>
+                <Label Text="Registros del Usuario"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="#3949AB"
+                       HorizontalOptions="Center" />
+
+                <CollectionView x:Name="ListaAsistenciasView"
+                                BackgroundColor="Transparent"
+                                SelectionMode="None">
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Vertical" ItemSpacing="10" />
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid ColumnDefinitions="*,Auto"
+                                  Padding="10"
+                                  BackgroundColor="#F5F5F5"
+                                  Margin="5"
+                                  VerticalOptions="Center">
+
+                                <Label Text="{Binding FechaEntradaDateTime, StringFormat='Fecha: {0:dd/MM/yyyy HH:mm}'}"
+                                       FontSize="14"
+                                       TextColor="Black"
+                                       VerticalOptions="Center" />
+
+                                <Label Text="{Binding Detalle}"
+                                       FontSize="14"
+                                       TextColor="#616161"
+                                       Grid.Column="1"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="End" />
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+        </Frame>
+
+        <!-- Espaciador inferior -->
+        <BoxView Grid.Row="2" HeightRequest="10" BackgroundColor="Transparent" />
+    </Grid>
+</ContentPage>

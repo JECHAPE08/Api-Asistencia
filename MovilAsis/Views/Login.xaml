@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MovilAsis.Views.Login"
+             xmlns:model="clr-namespace:MovilAsis.Models"
+             Title="Login"
+             x:DataType="model:UsuarioLogin"
+             BackgroundColor="#191414">
+
+    <ContentPage.BindingContext>
+        <model:UsuarioLogin/>
+    </ContentPage.BindingContext>
+
+    <AbsoluteLayout>
+
+        <!-- Formas decorativas -->
+        <Ellipse Fill="#1DB954" WidthRequest="300" HeightRequest="300"
+                 Opacity="0.15" AbsoluteLayout.LayoutBounds="0.1,0.1,300,300"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+        <Ellipse Fill="#FFFFFF" WidthRequest="200" HeightRequest="200"
+                 Opacity="0.05" AbsoluteLayout.LayoutBounds="1,0,200,200"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+        <Ellipse Fill="#1DB954" WidthRequest="150" HeightRequest="150"
+                 Opacity="0.1" AbsoluteLayout.LayoutBounds="0.8,1,150,150"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+        <!-- Contenido principal -->
+        <ScrollView AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+            <Grid Padding="30">
+                <VerticalStackLayout Spacing="30" VerticalOptions="Center" HorizontalOptions="Center">
+
+                    <!-- Título -->
+                    <VerticalStackLayout HorizontalOptions="Center" Spacing="10">
+                        <Label Text="Ingresar"
+                               FontSize="26"
+                               TextColor="#FFFFFF"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+
+                    <!-- Usuario -->
+                    <Frame BackgroundColor="#FFFFFF"
+                           CornerRadius="35"
+                           HasShadow="True"
+                           Padding="8"
+                           WidthRequest="280">
+                        <Entry Text="{Binding Matricula, Mode=TwoWay}"
+                               Placeholder="Matrícula"
+                               TextColor="#191414"
+                               PlaceholderColor="#888888"
+                               BackgroundColor="Transparent"
+                               FontSize="16"/>
+                    </Frame>
+
+                    <!-- Contraseña -->
+                    <Frame BackgroundColor="#FFFFFF"
+                           CornerRadius="35"
+                           HasShadow="True"
+                           Padding="8"
+                           WidthRequest="280">
+                        <Entry Text="{Binding Contraseña, Mode=TwoWay}"
+                               Placeholder="Contraseña"
+                               IsPassword="True"
+                               TextColor="#191414"
+                               PlaceholderColor="#888888"
+                               BackgroundColor="Transparent"
+                               FontSize="16"/>
+                    </Frame>
+
+                    <!-- Botón login -->
+                    <Button Text="Iniciar Sesión"
+                            Clicked="LoginButton_Clicked"
+                            BackgroundColor="#1DB954"
+                            TextColor="#FFFFFF"
+                            FontAttributes="Bold"
+                            FontSize="16"
+                            HeightRequest="50"
+                            WidthRequest="220"
+                            CornerRadius="25"
+                            HorizontalOptions="Center"/>
+
+                    <!-- Enlace a registro -->
+                    <Label Text="Crear una cuenta"
+                           TextColor="#FFFFFF"
+                           FontSize="14"
+                           HorizontalOptions="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="RegisterButton_Clicked"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+
+                    <!-- Mensaje de error -->
+                    <Label x:Name="MessageLabel"
+                           Text=""
+                           TextColor="#EF5350"
+                           FontSize="13"
+                           HorizontalOptions="Center"/>
+                </VerticalStackLayout>
+            </Grid>
+        </ScrollView>
+    </AbsoluteLayout>
+</ContentPage>

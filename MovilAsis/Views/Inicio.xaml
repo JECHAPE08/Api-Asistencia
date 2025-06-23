@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MovilAsis.Views.Inicio"
+             Title="Inicio"
+             BackgroundColor="#191414">
+
+    <AbsoluteLayout>
+
+        <!-- Figuras decorativas -->
+        <Ellipse Fill="#1DB954" WidthRequest="220" HeightRequest="220"
+                 Opacity="0.1" AbsoluteLayout.LayoutBounds="1,0,220,220"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+        <Ellipse Fill="#FFFFFF" WidthRequest="180" HeightRequest="180"
+                 Opacity="0.05" AbsoluteLayout.LayoutBounds="0.1,1,180,180"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+        <!-- Contenido principal -->
+        <Grid AbsoluteLayout.LayoutBounds="0,0,1,1"
+              AbsoluteLayout.LayoutFlags="All"
+              Padding="20">
+
+            <!-- Botón cerrar sesión -->
+            <StackLayout>
+                <Button 
+                    Text="Cerrar Sesión"
+                    Clicked="OnCerrarSesion"
+                    HorizontalOptions="End"
+                    Margin="0,20,10,0"
+                    BackgroundColor="Transparent"
+                    TextColor="#1DB954"
+                    FontSize="14"
+                    FontAttributes="Bold"
+                    HeightRequest="40">
+
+                    <Button.ImageSource>
+                        <FontImageSource 
+                            Glyph=""
+                            FontFamily="FontAwesome"
+                            Size="16"
+                            Color="#1DB954"/>
+                    </Button.ImageSource>
+                </Button>
+
+                <!-- Contenido principal centrado -->
+                <StackLayout 
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    Spacing="30"
+                    Padding="20">
+
+                    <!-- Botón tomar asistencia -->
+                    <Button 
+                        x:Name="TextoBoton"
+                        Text="Tomar Asistencia"
+                        Clicked="OnFuncionTiempo"       
+                        CornerRadius="30"  
+                        HeightRequest="60"
+                        WidthRequest="240"
+                        FontSize="18"
+                        FontAttributes="Bold"
+                        TextColor="White">
+
+                        <Button.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                                <GradientStop Color="#1DB954" Offset="0"/>
+                                <GradientStop Color="#14A044" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+
+                        <Button.Shadow>
+                            <Shadow Brush="#80000000" Offset="0,6" Radius="10"/>
+                        </Button.Shadow>
+                    </Button>
+
+                    <!-- Botón historial de asistencias -->
+                    <Button 
+                        Text="Historial de Asistencias"
+                        Clicked="OnVerHistorialClicked"
+                        CornerRadius="30"  
+                        HeightRequest="60"
+                        WidthRequest="240"
+                        FontSize="18"
+                        FontAttributes="Bold"
+                        TextColor="White">
+
+                        <Button.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                                <GradientStop Color="#1DB954" Offset="0"/>
+                                <GradientStop Color="#14A044" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+
+                        <Button.Shadow>
+                            <Shadow Brush="#80000000" Offset="0,6" Radius="10"/>
+                        </Button.Shadow>
+                    </Button>
+
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </AbsoluteLayout>
+</ContentPage>
