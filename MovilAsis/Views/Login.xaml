@@ -13,7 +13,7 @@
 
     <AbsoluteLayout>
 
-        <!-- Formas decorativas -->
+
         <Ellipse Fill="#1DB954" WidthRequest="300" HeightRequest="300"
                  Opacity="0.15" AbsoluteLayout.LayoutBounds="0.1,0.1,300,300"
                  AbsoluteLayout.LayoutFlags="PositionProportional"/>
@@ -26,12 +26,10 @@
                  Opacity="0.1" AbsoluteLayout.LayoutBounds="0.8,1,150,150"
                  AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-        <!-- Contenido principal -->
         <ScrollView AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
             <Grid Padding="30">
                 <VerticalStackLayout Spacing="30" VerticalOptions="Center" HorizontalOptions="Center">
 
-                    <!-- Título -->
                     <VerticalStackLayout HorizontalOptions="Center" Spacing="10">
                         <Label Text="Ingresar"
                                FontSize="26"
@@ -40,7 +38,6 @@
                                HorizontalOptions="Center"/>
                     </VerticalStackLayout>
 
-                    <!-- Usuario -->
                     <Frame BackgroundColor="#FFFFFF"
                            CornerRadius="35"
                            HasShadow="True"
@@ -54,7 +51,6 @@
                                FontSize="16"/>
                     </Frame>
 
-                    <!-- Contraseña -->
                     <Frame BackgroundColor="#FFFFFF"
                            CornerRadius="35"
                            HasShadow="True"
@@ -69,7 +65,6 @@
                                FontSize="16"/>
                     </Frame>
 
-                    <!-- Botón login -->
                     <Button Text="Iniciar Sesión"
                             Clicked="LoginButton_Clicked"
                             BackgroundColor="#1DB954"
@@ -81,7 +76,6 @@
                             CornerRadius="25"
                             HorizontalOptions="Center"/>
 
-                    <!-- Enlace a registro -->
                     <Label Text="Crear una cuenta"
                            TextColor="#FFFFFF"
                            FontSize="14"
@@ -91,7 +85,6 @@
                         </Label.GestureRecognizers>
                     </Label>
 
-                    <!-- Mensaje de error -->
                     <Label x:Name="MessageLabel"
                            Text=""
                            TextColor="#EF5350"

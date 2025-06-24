@@ -13,7 +13,7 @@
 
     <Grid RowDefinitions="70,*,Auto" Padding="0">
 
-        <!-- Encabezado azul oscuro -->
+
         <Grid BackgroundColor="#3949AB"
               Padding="20,0"
               ColumnDefinitions="*,Auto"

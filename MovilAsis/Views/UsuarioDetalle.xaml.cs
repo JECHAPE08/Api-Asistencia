@@ -9,11 +9,6 @@ public partial class UsuarioDetalle : ContentPage
 	{
 		InitializeComponent();
         BindingContext = usuario;
-        // Configurar el mapa
-        //var ubicacion = new Location(usuario.LatitudEntrada, usuario.LongitudEntrada);
-        //mapaAsistencia.MoveToRegion(MapSpan.FromCenterAndRadius(ubicacion, Distance.FromKilometers(0.5)));
-
-        //pinUbicacion.Location = ubicacion;
     }
 
     private async void OnAbrirMapaClicked(object sender, EventArgs e)

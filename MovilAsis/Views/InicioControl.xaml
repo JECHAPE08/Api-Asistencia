@@ -19,7 +19,7 @@
 
     <Grid Padding="0" RowDefinitions="Auto,*,Auto">
 
-        <!-- Encabezado azul oscuro -->
+
         <Grid BackgroundColor="#3949AB"  
               Padding="16,0"
               HeightRequest="60"
@@ -33,7 +33,7 @@
                    VerticalOptions="Center"
                    HorizontalOptions="Start" />
 
-            <!-- Botón menú estilo "chip" -->
+
             <Button Text="⋮"
                     FontSize="26"
                     TextColor="White"
@@ -61,14 +61,14 @@
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <Grid>
-                        <!-- Sombra muy sutil -->
+
                         <BoxView BackgroundColor="#22000000"
                                  Margin="6,6,0,0"
                                  CornerRadius="10"
                                  HorizontalOptions="Fill"
                                  VerticalOptions="Fill" />
 
-                        <!-- Borde (azul si es válido, rojo si no) -->
+
                         <BoxView BackgroundColor="{Binding UbicacionValida, Converter={StaticResource BoolToColorConverter}, ConverterParameter='#3949AB|#FF0000'}"
                                  Margin="0"
                                  HorizontalOptions="Fill"

@@ -1,7 +1,92 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|c:\\users\\equipo-12\\source\\repos\\movilasis\\movilasis\\services\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|solutionrelative:movilasis\\services\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|c:\\users\\equipo-12\\source\\repos\\movilasis\\movilasis\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|solutionrelative:movilasis\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|c:\\users\\equipo-12\\source\\repos\\movilasis\\movilasis\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|solutionrelative:movilasis\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|c:\\users\\equipo-12\\source\\repos\\movilasis\\movilasis\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|solutionrelative:movilasis\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|c:\\users\\equipo-12\\source\\repos\\movilasis\\movilasis\\global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|solutionrelative:movilasis\\global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|c:\\users\\equipo-12\\source\\repos\\movilasis\\movilasis\\views\\usuarioscontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|solutionrelative:movilasis\\views\\usuarioscontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|c:\\users\\equipo-12\\source\\repos\\movilasis\\movilasis\\views\\usuariodetalle.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|solutionrelative:movilasis\\views\\usuariodetalle.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|c:\\users\\equipo-12\\source\\repos\\movilasis\\movilasis\\views\\registro.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|solutionrelative:movilasis\\views\\registro.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|c:\\users\\equipo-12\\source\\repos\\movilasis\\movilasis\\views\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|solutionrelative:movilasis\\views\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|c:\\users\\equipo-12\\source\\repos\\movilasis\\movilasis\\views\\iniciocontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|solutionrelative:movilasis\\views\\iniciocontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|c:\\users\\equipo-12\\source\\repos\\movilasis\\movilasis\\views\\inicio.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|solutionrelative:movilasis\\views\\inicio.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|c:\\users\\equipo-12\\source\\repos\\movilasis\\movilasis\\views\\historialasistencia.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|solutionrelative:movilasis\\views\\historialasistencia.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|c:\\users\\equipo-12\\source\\repos\\movilasis\\movilasis\\views\\detallesusuarioscontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|solutionrelative:movilasis\\views\\detallesusuarioscontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|c:\\users\\equipo-12\\source\\repos\\movilasis\\movilasis\\views\\usuarioscontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|solutionrelative:movilasis\\views\\usuarioscontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|c:\\users\\equipo-12\\source\\repos\\movilasis\\movilasis\\views\\usuariodetalle.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|solutionrelative:movilasis\\views\\usuariodetalle.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|c:\\users\\equipo-12\\source\\repos\\movilasis\\movilasis\\views\\registro.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|solutionrelative:movilasis\\views\\registro.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|c:\\users\\equipo-12\\source\\repos\\movilasis\\movilasis\\views\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|solutionrelative:movilasis\\views\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|c:\\users\\equipo-12\\source\\repos\\movilasis\\movilasis\\views\\iniciocontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|solutionrelative:movilasis\\views\\iniciocontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|c:\\users\\equipo-12\\source\\repos\\movilasis\\movilasis\\views\\inicio.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|solutionrelative:movilasis\\views\\inicio.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|c:\\users\\equipo-12\\source\\repos\\movilasis\\movilasis\\views\\historialasistencia.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|solutionrelative:movilasis\\views\\historialasistencia.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|c:\\users\\equipo-12\\source\\repos\\movilasis\\movilasis\\views\\detallesusuarioscontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F55B1648-8881-41D5-9EB5-0778C073A865}|MovilAsis\\MovilAsis.csproj|solutionrelative:movilasis\\views\\detallesusuarioscontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +94,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,6 +131,283 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{936b24b7-e640-3186-98a7-24307bb298e0}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Service.cs",
+              "DocumentMoniker": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Services\\Service.cs",
+              "RelativeDocumentMoniker": "MovilAsis\\Services\\Service.cs",
+              "ToolTip": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Services\\Service.cs",
+              "RelativeToolTip": "MovilAsis\\Services\\Service.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAC8AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T18:57:51.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "MovilAsis\\AppShell.xaml.cs",
+              "ToolTip": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\AppShell.xaml.cs",
+              "RelativeToolTip": "MovilAsis\\AppShell.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T18:57:41.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\App.xaml.cs",
+              "RelativeDocumentMoniker": "MovilAsis\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\App.xaml.cs",
+              "RelativeToolTip": "MovilAsis\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T18:57:39.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "MovilAsis\\MauiProgram.cs",
+              "ToolTip": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\MauiProgram.cs",
+              "RelativeToolTip": "MovilAsis\\MauiProgram.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T18:57:14.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Global.cs",
+              "DocumentMoniker": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Global.cs",
+              "RelativeDocumentMoniker": "MovilAsis\\Global.cs",
+              "ToolTip": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Global.cs",
+              "RelativeToolTip": "MovilAsis\\Global.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T18:56:43.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsuariosControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Views\\UsuariosControl.xaml.cs",
+              "RelativeDocumentMoniker": "MovilAsis\\Views\\UsuariosControl.xaml.cs",
+              "ToolTip": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Views\\UsuariosControl.xaml.cs",
+              "RelativeToolTip": "MovilAsis\\Views\\UsuariosControl.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T18:56:17.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UsuarioDetalle.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Views\\UsuarioDetalle.xaml.cs",
+              "RelativeDocumentMoniker": "MovilAsis\\Views\\UsuarioDetalle.xaml.cs",
+              "ToolTip": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Views\\UsuarioDetalle.xaml.cs",
+              "RelativeToolTip": "MovilAsis\\Views\\UsuarioDetalle.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T18:56:06.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Registro.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Views\\Registro.xaml.cs",
+              "RelativeDocumentMoniker": "MovilAsis\\Views\\Registro.xaml.cs",
+              "ToolTip": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Views\\Registro.xaml.cs",
+              "RelativeToolTip": "MovilAsis\\Views\\Registro.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T18:55:42.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Login.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Views\\Login.xaml.cs",
+              "RelativeDocumentMoniker": "MovilAsis\\Views\\Login.xaml.cs",
+              "ToolTip": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Views\\Login.xaml.cs",
+              "RelativeToolTip": "MovilAsis\\Views\\Login.xaml.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T18:55:37.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DetallesUsuariosControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Views\\DetallesUsuariosControl.xaml.cs",
+              "RelativeDocumentMoniker": "MovilAsis\\Views\\DetallesUsuariosControl.xaml.cs",
+              "ToolTip": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Views\\DetallesUsuariosControl.xaml.cs",
+              "RelativeToolTip": "MovilAsis\\Views\\DetallesUsuariosControl.xaml.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T18:55:20.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UsuariosControl.xaml",
+              "DocumentMoniker": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Views\\UsuariosControl.xaml",
+              "RelativeDocumentMoniker": "MovilAsis\\Views\\UsuariosControl.xaml",
+              "ToolTip": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Views\\UsuariosControl.xaml",
+              "RelativeToolTip": "MovilAsis\\Views\\UsuariosControl.xaml",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAAAI0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-24T18:53:30.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UsuarioDetalle.xaml",
+              "DocumentMoniker": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Views\\UsuarioDetalle.xaml",
+              "RelativeDocumentMoniker": "MovilAsis\\Views\\UsuarioDetalle.xaml",
+              "ToolTip": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Views\\UsuarioDetalle.xaml",
+              "RelativeToolTip": "MovilAsis\\Views\\UsuarioDetalle.xaml",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-24T18:53:20.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Registro.xaml",
+              "DocumentMoniker": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Views\\Registro.xaml",
+              "RelativeDocumentMoniker": "MovilAsis\\Views\\Registro.xaml",
+              "ToolTip": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Views\\Registro.xaml",
+              "RelativeToolTip": "MovilAsis\\Views\\Registro.xaml",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-24T18:53:09.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Login.xaml",
+              "DocumentMoniker": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Views\\Login.xaml",
+              "RelativeDocumentMoniker": "MovilAsis\\Views\\Login.xaml",
+              "ToolTip": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Views\\Login.xaml",
+              "RelativeToolTip": "MovilAsis\\Views\\Login.xaml",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAAAFYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-24T18:52:49.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "InicioControl.xaml",
+              "DocumentMoniker": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Views\\InicioControl.xaml",
+              "RelativeDocumentMoniker": "MovilAsis\\Views\\InicioControl.xaml",
+              "ToolTip": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Views\\InicioControl.xaml",
+              "RelativeToolTip": "MovilAsis\\Views\\InicioControl.xaml",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAAAI0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-24T18:52:33.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DetallesUsuariosControl.xaml",
+              "DocumentMoniker": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Views\\DetallesUsuariosControl.xaml",
+              "RelativeDocumentMoniker": "MovilAsis\\Views\\DetallesUsuariosControl.xaml",
+              "ToolTip": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Views\\DetallesUsuariosControl.xaml",
+              "RelativeToolTip": "MovilAsis\\Views\\DetallesUsuariosControl.xaml",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAAAKQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-24T18:51:38.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "InicioControl.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Views\\InicioControl.xaml.cs",
+              "RelativeDocumentMoniker": "MovilAsis\\Views\\InicioControl.xaml.cs",
+              "ToolTip": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Views\\InicioControl.xaml.cs",
+              "RelativeToolTip": "MovilAsis\\Views\\InicioControl.xaml.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T18:51:03.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Inicio.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Views\\Inicio.xaml.cs",
+              "RelativeDocumentMoniker": "MovilAsis\\Views\\Inicio.xaml.cs",
+              "ToolTip": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Views\\Inicio.xaml.cs",
+              "RelativeToolTip": "MovilAsis\\Views\\Inicio.xaml.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAH0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T18:46:09.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HistorialAsistencia.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Views\\HistorialAsistencia.xaml.cs",
+              "RelativeDocumentMoniker": "MovilAsis\\Views\\HistorialAsistencia.xaml.cs",
+              "ToolTip": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Views\\HistorialAsistencia.xaml.cs",
+              "RelativeToolTip": "MovilAsis\\Views\\HistorialAsistencia.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAApwBcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T18:44:26.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Inicio.xaml",
+              "DocumentMoniker": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Views\\Inicio.xaml",
+              "RelativeDocumentMoniker": "MovilAsis\\Views\\Inicio.xaml",
+              "ToolTip": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Views\\Inicio.xaml",
+              "RelativeToolTip": "MovilAsis\\Views\\Inicio.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-24T18:42:36.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "HistorialAsistencia.xaml",
+              "DocumentMoniker": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Views\\HistorialAsistencia.xaml",
+              "RelativeDocumentMoniker": "MovilAsis\\Views\\HistorialAsistencia.xaml",
+              "ToolTip": "C:\\Users\\EQUIPO-12\\source\\repos\\MovilAsis\\MovilAsis\\Views\\HistorialAsistencia.xaml",
+              "RelativeToolTip": "MovilAsis\\Views\\HistorialAsistencia.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-24T18:41:05.307Z",
+              "EditorCaption": ""
             }
           ]
         },

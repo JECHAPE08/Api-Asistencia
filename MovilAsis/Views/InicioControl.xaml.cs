@@ -15,21 +15,6 @@ public partial class InicioControl : ContentPage
         _ = ObtenerUsuariosConAsistencia();
     }
 
-    //public async void Suscribir()
-    //{
-    //    try
-    //    {
-    //        await _topicService.SubscribeToTopicAsync("Asistecia");
-    //        Debug.Write("Suscrito a Asistencia");
-    //    }
-    //    catch (Exception ex)
-    //    {
-    //        Debug.Write($"Error al suscribirse a Asistencia: {ex.Message}");
-    //        await DisplayAlert("Error", "No se pudo suscribir a las notificaciones de asistencia.", "OK");
-
-    //    }
-    //}
-    //}
     public async Task ObtenerUsuariosConAsistencia()
     {
         try
@@ -58,8 +43,9 @@ public partial class InicioControl : ContentPage
     public async void OnCerrarSesion(object sender, EventArgs e)
     {
         Global.CerrarSesion();
-        await Navigation.PushAsync(new Login());
         await Navigation.PopToRootAsync();
+        await Navigation.PushAsync(new Login());
+        
     }
 
     public async void OnUsuariosClicked(object sender, EventArgs e)

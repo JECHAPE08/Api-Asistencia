@@ -12,7 +12,6 @@
 
     <Grid Padding="0" RowDefinitions="Auto,Auto,*,Auto,Auto" ColumnDefinitions="*">
 
-        <!-- Encabezado azul -->
         <Grid BackgroundColor="#3949AB"
               Padding="20,0"
               HeightRequest="60"
@@ -20,7 +19,6 @@
               VerticalOptions="Start"
               HorizontalOptions="FillAndExpand">
 
-            <!-- Título a la izquierda -->
             <Label Text="Detalle de Usuario"
                    FontSize="22"
                    FontAttributes="Bold"
@@ -28,7 +26,6 @@
                    VerticalOptions="Center"
                    HorizontalOptions="Start" />
 
-            <!-- Botón Regresar a la derecha -->
             <Grid Grid.Column="1"
                   Padding="0"
                   VerticalOptions="Center"
@@ -47,7 +44,6 @@
             </Grid>
         </Grid>
 
-        <!-- Datos del usuario -->
         <Frame Grid.Row="1"
                Margin="15,10"
                Padding="15"
@@ -112,7 +108,6 @@
             </Grid>
         </Frame>
 
-        <!-- Asistencias -->
         <Frame Grid.Row="2"
                Margin="15,0,15,10"
                Padding="12"
@@ -167,8 +162,7 @@
                 </CollectionView>
             </VerticalStackLayout>
         </Frame>
-
-        <!-- Botón eliminar centrado y redondeado -->
+        
         <Grid Grid.Row="3"
               Margin="15,0,15,15"
               HeightRequest="50"

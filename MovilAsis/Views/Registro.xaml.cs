@@ -48,12 +48,10 @@ public partial class Registro : ContentPage
             }
             catch (HttpRequestException httpEx) when (httpEx.Message.Contains("401"))
             {
-                // Captura específicamente errores HTTP 401 (No autorizado).
                 await DisplayAlert("ERROR", "Matricula ya registrada", "OK");
             }
             catch (Exception ex)
             {
-                // Maneja otros errores (ej: sin conexión, error en el servidor).
                 await DisplayAlert("ERROR", $"Error al conectar", "OK");
             }
 

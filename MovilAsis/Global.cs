@@ -55,19 +55,10 @@ namespace MovilAsis
 
         public static bool VerificarUbicacionEnRango(double latitudActual, double longitudActual)
         {
-            // Ubicación central (punto de referencia)
             var ubicacionCentral = new Location(19.713221, -98.979263);
-
-            // Ubicación actual a verificar
             var ubicacionActual = new Location(latitudActual, longitudActual);
-
-            // Radio en metros (100 metros)
             const double radioMetros = 100;
-
-            // Calcular distancia
             double distanciaMetros = ubicacionCentral.CalculateDistance(ubicacionActual, DistanceUnits.Kilometers) * 1000;
-
-            // Verificar si está dentro del rango
             return distanciaMetros <= radioMetros;
         }
 
@@ -85,7 +76,7 @@ namespace MovilAsis
                     return boolValue ? colorParts[0] : colorParts[1];
                 }
             }
-            return "#000000"; // Color por defecto en caso de error
+            return "#000000"; 
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

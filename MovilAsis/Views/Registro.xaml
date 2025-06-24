@@ -13,7 +13,6 @@
 
     <AbsoluteLayout>
 
-        <!-- Figuras decorativas -->
         <Ellipse Fill="#1DB954" WidthRequest="250" HeightRequest="250"
                  Opacity="0.12" AbsoluteLayout.LayoutBounds="0,0,250,250"
                  AbsoluteLayout.LayoutFlags="PositionProportional"/>
@@ -26,12 +25,11 @@
                  Opacity="0.08" AbsoluteLayout.LayoutBounds="0.9,1,150,150"
                  AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-        <!-- Contenido principal -->
+
         <Grid RowDefinitions="*,Auto,*"
               AbsoluteLayout.LayoutBounds="0,0,1,1"
               AbsoluteLayout.LayoutFlags="All">
 
-            <!-- Contenedor blanco con sombra -->
             <Frame Grid.Row="1"
                    CornerRadius="20"
                    Padding="30"

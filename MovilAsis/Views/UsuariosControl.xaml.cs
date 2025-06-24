@@ -30,7 +30,6 @@ public partial class UsuariosControl : ContentPage
             var lista = await _apiService.GetAsync<Usuario>("ListaUsuarios");
             usuarios = lista?.ToList() ?? new List<Usuario>();
 
-            // Actualizar en el hilo UI
             MainThread.BeginInvokeOnMainThread(() =>
             {
                 usuariosCollection.ItemsSource = usuarios;
@@ -38,7 +37,6 @@ public partial class UsuariosControl : ContentPage
         }
         catch (Exception ex)
         {
-            // Puedes usar un logger o mostrar un mensaje para depuración
             System.Diagnostics.Debug.WriteLine($"Error cargando usuarios: {ex.Message}");
         }
     }
@@ -49,10 +47,7 @@ public partial class UsuariosControl : ContentPage
         if (seleccionado == null)
             return;
 
-        // Navegar a detalles
         await Navigation.PushAsync(new DetallesUsuariosControl(seleccionado));
-
-        // Limpiar selección para evitar problema visual
         ((CollectionView)sender).SelectedItem = null;
     }
 

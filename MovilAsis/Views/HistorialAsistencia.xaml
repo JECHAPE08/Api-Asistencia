@@ -3,54 +3,50 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MovilAsis.Views.HistorialAsistencia"
              Title="Historial de Asistencias"
-             BackgroundColor="White">
+             BackgroundColor="#191414">
 
     <Grid Padding="0" RowDefinitions="Auto,*,Auto" ColumnDefinitions="*">
 
-        <Grid BackgroundColor="#3949AB"
+        <Grid BackgroundColor="#191414"
               Padding="20,0"
               HeightRequest="60"
               ColumnDefinitions="*,Auto"
               VerticalOptions="Start"
               HorizontalOptions="FillAndExpand">
 
-            <Label Text="Asistencias"
+            <Label Text="Historial de Asistencias"
                    FontSize="22"
                    FontAttributes="Bold"
                    TextColor="White"
                    VerticalOptions="Center"
                    HorizontalOptions="Start" />
 
-            <Grid Grid.Column="1"
-                  VerticalOptions="Center"
-                  HorizontalOptions="End"
-                  HeightRequest="42"
-                  WidthRequest="130"
-                  Margin="0,0,10,0">
-                <Button Text="Regresar"
-                        BackgroundColor="#5C6BC0"
-                        TextColor="White"
-                        FontSize="14"
-                        FontAttributes="Bold"
-                        CornerRadius="20"
-                        Padding="16,6"
-                        Clicked="OnRegresar" />
-            </Grid>
+            <Button Text="Regresar"
+                    BackgroundColor="Transparent"
+                    TextColor="#1DB954"
+                    FontSize="14"
+                    FontAttributes="Bold"
+                    Padding="10,6"
+                    Clicked="OnRegresar"
+                    Grid.Column="1"
+                    VerticalOptions="Center"
+                    HorizontalOptions="End"/>
         </Grid>
+
 
         <Frame Grid.Row="1"
                Margin="15,10"
                Padding="12"
-               BackgroundColor="White"
-               BorderColor="#3949AB"
+               BackgroundColor="#212121"
+               BorderColor="#1DB954"
                HasShadow="True"
                CornerRadius="12">
 
-            <VerticalStackLayout>
+            <StackLayout Spacing="10">
                 <Label Text="Registros del Usuario"
                        FontSize="18"
                        FontAttributes="Bold"
-                       TextColor="#3949AB"
+                       TextColor="#1DB954"
                        HorizontalOptions="Center" />
 
                 <CollectionView x:Name="ListaAsistenciasView"
@@ -62,31 +58,26 @@
 
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
-                            <Grid ColumnDefinitions="*,Auto"
-                                  Padding="10"
-                                  BackgroundColor="#F5F5F5"
-                                  Margin="5"
-                                  VerticalOptions="Center">
+                            <StackLayout Padding="10"
+                                         BackgroundColor="#2E2E2E"
+                                         Margin="5"
+                                         Orientation="Vertical"
+                                         Spacing="4">
 
                                 <Label Text="{Binding FechaEntradaDateTime, StringFormat='Fecha: {0:dd/MM/yyyy HH:mm}'}"
                                        FontSize="14"
-                                       TextColor="Black"
-                                       VerticalOptions="Center" />
+                                       TextColor="White" />
 
                                 <Label Text="{Binding Detalle}"
                                        FontSize="14"
-                                       TextColor="#616161"
-                                       Grid.Column="1"
-                                       VerticalOptions="Center"
-                                       HorizontalOptions="End" />
-                            </Grid>
+                                       TextColor="#A5D6A7" />
+                            </StackLayout>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
-            </VerticalStackLayout>
+            </StackLayout>
         </Frame>
 
-        <!-- Espaciador inferior -->
         <BoxView Grid.Row="2" HeightRequest="10" BackgroundColor="Transparent" />
     </Grid>
 </ContentPage>

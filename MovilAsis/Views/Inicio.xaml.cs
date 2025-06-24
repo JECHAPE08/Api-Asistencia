@@ -117,8 +117,9 @@ public partial class Inicio : ContentPage
     private async void OnCerrarSesion(object sender, EventArgs e)
     {
         Global.CerrarSesion();
-        await Navigation.PushAsync(new Login());
         await Navigation.PopToRootAsync();
+        await Navigation.PushAsync(new Login());
+        
     }
     
     
